@@ -1,11 +1,16 @@
 @font-face {
-  font-family: "iransans";
-  src: url("../fonts/IRANSansWeb.eot") format("eot"),
-    url("../fonts/IRANSansWeb.ttf") format("ttf"),
-    url("../fonts/IRANSansWeb.woff") format("woff"),
-    url("../fonts/IRANSansWeb.woff2") format("woff2");
+  font-family: iransans;
+  src: url(../fonts/IRANSansWeb.eot) format("truetype"),
+    url(../fonts/IRANSansWeb.ttf) format("ttf"),
+    url(../fonts/IRANSansWeb.woff) format("woff"),
+    url(../fonts/IRANSansWeb.woff2) format("woff2");
 }
-
+:root {
+  --white: #fff;
+  --red: red;
+  --text: #333;
+  --black: #000;
+}
 html,
 body {
   direction: rtl;
@@ -20,7 +25,7 @@ li {
   box-sizing: border-box;
   border: none;
   color: #333;
-  font-family: "iransans";
+  font-family: iransans;
 }
 a {
   text-decoration: none;
@@ -72,4 +77,55 @@ a {
   font-weight: bold;
   font-family: "iransans";
   cursor: pointer;
+}
+
+/* ********************************** */
+/* page_intro */
+/* ********************************** */
+
+.page_intro {
+  width: 100%;
+  background: rgb(72, 247, 236);
+  background: linear-gradient(
+    90deg,
+    rgba(72, 247, 236, 1) 0%,
+    rgba(0, 31, 255, 1) 100%
+  );
+  height: auto;
+}
+.page_intro_content {
+  display: flex;
+}
+.page_intro_right {
+  width: 50%;
+}
+.page_intro_right .title {
+  font-size: 60px;
+  color: var(--white);
+  padding: 2rem 2rem 0rem 0rem;
+  line-height: 1.3;
+}
+.page_intro_right .page_intro_right_buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.page_intro_right .page_intro_right_button {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: var(--white);
+  cursor: pointer;
+}
+.first {
+  margin-left: 1rem;
+}
+.page_intro_left {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.page_intro_left img {
 }
