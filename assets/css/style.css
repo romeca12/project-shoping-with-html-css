@@ -12,6 +12,7 @@
   --text: #333;
   --black: #000;
   --product-post: rgb(200, 226, 255);
+  --blue: #0080ff;
 }
 html,
 body {
@@ -33,6 +34,9 @@ li {
 }
 a {
   text-decoration: none;
+}
+button {
+  cursor: pointer;
 }
 
 /* ************************* */
@@ -84,13 +88,13 @@ a {
   position: relative;
 }
 .header_btn {
-  background-color: #0080ff;
+  background-color: var(--red);
   color: var(--white);
-  padding: 10px 13px;
   border-radius: 3px;
   font-weight: bold;
-  font-family: "iransans";
-  cursor: pointer;
+  width: 105px;
+  height: 42px;
+  font-size: 14px;
 }
 .drop_down_icon {
   width: 12px;
@@ -380,6 +384,101 @@ a {
   width: 30px;
   height: 30px;
   margin-right: 0.5rem;
+}
+
+/* ******************************************************** */
+/* صفحه سینگل */
+/* مسیر راهنما */
+/* ******************************************************** */
+
+.bread_crumbs {
+  margin-top: 1.5rem;
+}
+
+.bread_crumbs .bread_crumbs_box {
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+.bread_crumbs a::after {
+  content: ">";
+  display: inline-block;
+  background-size: cover;
+  width: 15px;
+  height: 20px;
+  margin: 0rem 0.8rem 0rem 0.3rem;
+  vertical-align: -1px;
+}
+.bread_crumbs span {
+  color: var(--red);
+}
+/* ******************************************************** */
+/* بخش خرید محصول */
+/* ******************************************************** */
+
+.single_product {
+  padding-top: 2rem;
+  display: flex;
+}
+.single_product_right {
+  width: 50%;
+}
+.single_product_pic {
+  width: 350px;
+  height: auto;
+  margin: 0px auto;
+}
+.single_product_pic img {
+  width: 100%;
+  border: 1px solid #aaa;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.single_product_left {
+  width: 50%;
+  margin-top: 1rem;
+}
+.single_product_left h1 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+.single_product_sizes {
+  margin: 1rem 0px 1.7rem;
+}
+.single_product_sizes p {
+  margin-bottom: 1rem;
+}
+.single_product_size {
+  border: 1px solid var(--black);
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 6px;
+  margin-left: 0.4rem;
+  border-radius: 5px;
+  color: var(--red);
+}
+.single_product_attrebute {
+  margin-bottom: 1.5rem;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.single_product_attrebute h2 {
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+}
+.single_product_left button {
+  background-color: var(--red);
+  width: 300px;
+  height: 50px;
+  border-radius: 7px;
+  color: var(--white);
+  font-size: 19px;
 }
 /* ******************************************************** */
 /* مدیا کوئری */
