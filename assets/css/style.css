@@ -190,6 +190,7 @@ button {
   margin-top: 2rem;
   font-weight: bold;
   color: var(--primary);
+  color: var(--text);
 }
 .products_post .products {
   width: 100%;
@@ -219,8 +220,6 @@ button {
 .product_picture_fram img {
   width: 100%;
   height: 100%;
-
-  /* transform-origin: 100% 50%; */
   transition: scale 0.4s ease-out;
 }
 .single_product_post:hover .product_picture_fram img {
@@ -422,6 +421,7 @@ button {
 .single_product {
   padding-top: 2rem;
   display: flex;
+  margin-bottom: 4rem;
 }
 .single_product_right {
   width: 50%;
@@ -525,6 +525,7 @@ button {
   }
   .single_product_left {
     width: 350px;
+    margin-top: 1.7rem;
   }
 }
 @media screen and (max-width: 1030px) {
