@@ -38,6 +38,13 @@ a {
 button {
   cursor: pointer;
 }
+.red {
+  color: var(--red) !important;
+}
+.p15 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 /* ************************* */
 /* header */
@@ -91,7 +98,7 @@ button {
   background-color: transparent;
   border: 1px solid var(--red);
   color: var(--red);
-  border-radius: 3px;
+  border-radius: 8px;
   width: 105px;
   height: 42px;
   font-size: 15px;
@@ -492,6 +499,155 @@ button {
   font-size: 19px;
 }
 /* ******************************************************** */
+/* صفحه سینگل  */
+/* بخش نظرات */
+/* ******************************************************** */
+
+.comments {
+  margin-top: 4rem;
+}
+.comments h2 {
+  font-size: 22px;
+}
+.comments_parent {
+  height: auto;
+  background-color: #0000000c;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+}
+.comments_parent .comment_item {
+  min-height: 150px;
+  padding: 2.3rem 0rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+.comments_parent .comment_item:last-child {
+  border-bottom: none;
+}
+.comment_item .image {
+  margin-left: 1.2rem;
+  margin-top: -3.7rem;
+}
+.comment_body .comment_top {
+  margin-bottom: 0.5rem;
+}
+.comment_body .comment_top span:first-child {
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.comment_body .comment_bottom span:last-child {
+  display: block;
+  margin-top: 0.6rem;
+  color: green;
+}
+
+/* ******************************************************** */
+/* تماس باما */
+/* ******************************************************** */
+
+.contactUs {
+  margin-top: 2rem;
+}
+.contactUs h1 {
+  font-size: 26px;
+}
+.contactUs .contact_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.contact_box .contact_input {
+  width: 50%;
+  height: auto;
+  margin-bottom: 1.4rem;
+}
+.contact_input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+.contact_input input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #777;
+  border-radius: 4px;
+  padding-right: 0.7rem;
+  font-size: 16px;
+}
+.contact_textarea {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+.contact_textarea label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.contact_textarea textarea {
+  border: 1px solid #777;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 120px;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 17px;
+}
+.contact_btn input {
+  width: 5rem;
+  height: 2.5rem;
+  background-color: #0080ff;
+  color: var(--white);
+  border-radius: 6px;
+  font-size: 1.05rem;
+  margin-bottom: 3rem;
+}
+
+.contactUs hr {
+  border: 1px solid var(--text);
+  margin: 0px 15px;
+}
+.contact_info{
+  height: auto;
+}
+.contact_info .row {
+  display: flex;
+}
+.contact_info h2 {
+  margin: 1.5rem 0rem 1.5rem;
+}
+
+.contact_right {
+  width: 50%;
+
+}
+.contact_right address {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+  padding: 0px 15px;
+}
+
+.contact_right span {
+  font-size: 19px;
+  display: block;
+  line-height: 2;
+}
+.contact_right .span_work{
+  margin-top: 1.5rem;
+}
+
+.contact_left {
+  width: 50%;
+}
+.contact_left img {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+}
+
+/* ******************************************************** */
 /* مدیا کوئری */
 /* ******************************************************** */
 
@@ -587,6 +743,24 @@ button {
   }
   .page_intro_right .title {
     font-size: 45px;
+  }
+  .contact_box {
+    flex-direction: column;
+  }
+  .contact_box .contact_input {
+    width: 100%;
+  }
+  .contact_info .row{
+    flex-direction: column-reverse;
+  }
+  .contact_info .row .contact_right{
+    width: 100%;
+  }
+  .contact_info .row .contact_left{
+    width: 100%;
+  }
+  .contact_info .row .contact_left img{
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 597px) {
